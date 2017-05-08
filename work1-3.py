@@ -25,8 +25,13 @@ if BMI >=24:
 
 #work3
 import random
-items = ['red-1', 'red-2', 'red-3', 'red-4', 'red-5', 'red-6','red-7','red-8','red-9','red-Q','red-J','red-K','red-A','black-1', 'black-2', 'black-3', 'black-4', 'black-5', 'black-6','black-7','black-8','black-9','black-Q','black-J','black-K','black-A','plum-1', 'plum-2', 'plum-3', 'plum-4', 'plum-5', 'plum-6','plum-7','plum-8','plum-9','plum-Q','plum-J','plum-K','plum-A','diamond-1', 'diamond-2', 'diamond-3', 'diamond-4', 'diamond-5', 'diamond-6','diamond-7','diamond-8','diamond-9','diamond-Q','diamond-J','diamond-K','diamond-A','red Joker','black Joker']
+#生成扑克牌列表
+items = [m+str(n)  for m in 'RBPD' for n in range(13)]
+items.append('red Joker')
+items.append('black Joker')
+#洗牌
 random.shuffle(items)
+
 def poker(items):
     A=random.sample(items,17)
     print(A)
