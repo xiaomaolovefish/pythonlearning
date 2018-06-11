@@ -1,0 +1,23 @@
+<!-- data_form.html -->
+<html>
+<head>
+    <title>data update</title>
+</head>
+<body>
+    <h1>data update</h1>
+
+    {% if form.errors %}
+        <p style="color: red;">
+            Please correct the error{{ form.errors|pluralize }} below.
+        </p>
+    {% endif %}
+
+    <form method="post", enctype="multipart/form-data">{% csrf_token %}
+        <table>
+            {{ form.name }}
+		    {{ form.img }}
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

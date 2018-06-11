@@ -1,0 +1,89 @@
+<html>  
+<head>
+<meta charset="utf-8" />  
+<title>ajax test</title>  
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  
+<script type="text/javascript">  
+    jQuery(function($){  
+        $('#btn1').click(function(){  
+            $name = $(this).attr('name');  
+            $('#out').empty().load('/scene_update/',{ name : $name });  
+        }); 
+		 $('#list').click(function(){  
+          $.getJSON('/ajax_list/',function(ret){
+			  alert(ret);
+            //返回值 ret 在这里是一个列表
+                for (var i = ret.length - 1; i >= 0; i--) {
+                // 把 ret 的每一项显示在网页上
+                $('#list_result').append(' ' + ret[i])
+                };
+            }) 
+        }); 
+		$('#search').click(function() {
+			scence_name = $('#inputid');
+			alert(scence_name.val());
+            var post_data = {
+                "name": scece_name.val(),
+				alert(name);
+            };
+
+            $.ajax({
+                url: '/scene_update' ,
+                type: "POST",
+                data: post_data,
+                success: function (data) {
+                    data = JSON.parse(data);
+                  //  if (data["status"] == 1) {
+                  //      setSceneTd(data["result"], scece_name, td);
+                   // } else {
+                     alert(data["result"]);
+                     $('#list_result').append(' ' + data["result"]);
+                }
+            });
+        } ); 
+    });  
+</script> 
+ <head>
+    <script type="text/javascript" src="../static/js/build/react.js"></script>
+    <script type="text/javascript" src="../static/js/build/react-dom.js"></script>
+    <script type="text/javascript" src="../static/js/build/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+<script type="text/babel">
+ var Input = React.createClass({
+  getInitialState: function() {
+    return {value: 'Hello!'};
+  },
+  handleChange: function(event) {
+    this.setState({value: event.target.value});
+  },
+  render: function () {
+    var value = this.state.value;
+    return (
+       <div>
+         <input type="text" value={value} onChange=  {this.handleChange} />
+		 <input type="button"  value="查询" onClick={this.handleClick} />
+          <p>{value}</p>
+       </div>
+     );
+   }
+ });
+
+ReactDOM.render(
+  <Input/>, 
+  document.getElementById('example')
+);
+<style type="text/css"></style>
+ </script>
+</head>  
+<body>  
+<button id="btn1" name="1">1</button>  
+<button id="list" name="list">2</button>  
+<button id="list_result" name="list_result">2</button>
+<input type="text" id="inputid" />
+<button id="search" name="3">search</button>  
+<a href="/index">link</a>
+<div id="out"></div>  
+</body>  
+</html>  

@@ -1,0 +1,548 @@
+[2018-01-04 19:23:54 +0000] [32639] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 19:23:54 +0000] [32639] [INFO] Listening at: http://127.0.0.1:9000 (32639)
+[2018-01-04 19:23:54 +0000] [32639] [INFO] Using worker: sync
+[2018-01-04 19:23:54 +0000] [32645] [INFO] Booting worker with pid: 32645
+[2018-01-04 19:23:54 +0000] [32645] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named project_h.wsgi
+[2018-01-04 19:23:54 +0000] [32645] [INFO] Worker exiting (pid: 32645)
+[2018-01-04 19:23:54 +0000] [32639] [INFO] Shutting down: Master
+[2018-01-04 19:23:54 +0000] [32639] [INFO] Reason: Worker failed to boot.
+[2018-01-04 19:46:27 +0000] [1177] [INFO] Starting gunicorn 19.7.1
+[2018-01-04 19:46:27 +0000] [1177] [INFO] Listening at: http://127.0.0.1:443 (1177)
+[2018-01-04 19:46:27 +0000] [1177] [INFO] Using worker: sync
+[2018-01-04 19:46:27 +0000] [1182] [INFO] Booting worker with pid: 1182
+[2018-01-04 19:46:27 +0000] [1182] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named project_h.wsgi
+[2018-01-04 19:46:27 +0000] [1182] [INFO] Worker exiting (pid: 1182)
+[2018-01-04 19:46:27 +0000] [1177] [INFO] Shutting down: Master
+[2018-01-04 19:46:27 +0000] [1177] [INFO] Reason: Worker failed to boot.
+[2018-01-05 17:04:03 +0000] [22358] [INFO] Starting gunicorn 19.7.1
+[2018-01-05 17:04:03 +0000] [22358] [INFO] Listening at: http://127.0.0.1:9000 (22358)
+[2018-01-05 17:04:03 +0000] [22358] [INFO] Using worker: sync
+[2018-01-05 17:04:03 +0000] [22364] [INFO] Booting worker with pid: 22364
+[2018-01-05 09:04:04 +0000] [22364] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/lizhiping/Website/Website/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/lib64/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/lib64/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/lib64/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/lib64/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named users
+[2018-01-05 09:04:04 +0000] [22364] [INFO] Worker exiting (pid: 22364)
+[2018-01-05 17:04:04 +0000] [22358] [INFO] Shutting down: Master
+[2018-01-05 17:04:04 +0000] [22358] [INFO] Reason: Worker failed to boot.
+[2018-01-05 17:11:35 +0000] [22718] [INFO] Starting gunicorn 19.7.1
+[2018-01-05 17:11:35 +0000] [22718] [INFO] Listening at: http://127.0.0.1:9000 (22718)
+[2018-01-05 17:11:35 +0000] [22718] [INFO] Using worker: sync
+[2018-01-05 17:11:35 +0000] [22723] [INFO] Booting worker with pid: 22723
+[2018-01-05 09:11:35 +0000] [22723] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/lizhiping/Website/Website/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/lib64/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/lib64/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/lib64/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/lib64/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named users
+[2018-01-05 09:11:35 +0000] [22723] [INFO] Worker exiting (pid: 22723)
+[2018-01-05 17:11:35 +0000] [22718] [INFO] Shutting down: Master
+[2018-01-05 17:11:35 +0000] [22718] [INFO] Reason: Worker failed to boot.
+[2018-01-05 17:12:50 +0000] [22804] [INFO] Starting gunicorn 19.7.1
+[2018-01-05 17:12:50 +0000] [22804] [INFO] Listening at: http://127.0.0.1:9000 (22804)
+[2018-01-05 17:12:50 +0000] [22804] [INFO] Using worker: sync
+[2018-01-05 17:12:50 +0000] [22809] [INFO] Booting worker with pid: 22809
+[2018-01-05 09:12:50 +0000] [22809] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/lizhiping/Website/Website/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/lib64/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/lib64/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/lib64/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/lib64/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named users
+[2018-01-05 09:12:50 +0000] [22809] [INFO] Worker exiting (pid: 22809)
+[2018-01-05 17:12:50 +0000] [22804] [INFO] Shutting down: Master
+[2018-01-05 17:12:50 +0000] [22804] [INFO] Reason: Worker failed to boot.
+[2018-01-05 17:18:39 +0000] [23147] [INFO] Starting gunicorn 19.7.1
+[2018-01-05 17:18:39 +0000] [23147] [INFO] Listening at: http://127.0.0.1:9000 (23147)
+[2018-01-05 17:18:39 +0000] [23147] [INFO] Using worker: sync
+[2018-01-05 17:18:39 +0000] [23152] [INFO] Booting worker with pid: 23152
+[2018-01-05 09:18:40 +0000] [23152] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/lizhiping/Website/Website/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/lib64/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/lib64/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/lib64/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/lib64/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named users
+[2018-01-05 09:18:40 +0000] [23152] [INFO] Worker exiting (pid: 23152)
+[2018-01-05 17:18:40 +0000] [23147] [INFO] Shutting down: Master
+[2018-01-05 17:18:40 +0000] [23147] [INFO] Reason: Worker failed to boot.
+[2018-01-05 17:21:44 +0000] [23313] [INFO] Starting gunicorn 19.7.1
+[2018-01-05 17:21:44 +0000] [23313] [INFO] Listening at: http://127.0.0.1:9000 (23313)
+[2018-01-05 17:21:44 +0000] [23313] [INFO] Using worker: sync
+[2018-01-05 17:21:44 +0000] [23319] [INFO] Booting worker with pid: 23319
+[2018-01-05 09:21:44 +0000] [23319] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/lizhiping/Website/Website/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/lib64/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/lib64/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/lib64/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/lib64/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named users
+[2018-01-05 09:21:44 +0000] [23319] [INFO] Worker exiting (pid: 23319)
+[2018-01-05 17:21:44 +0000] [23313] [INFO] Shutting down: Master
+[2018-01-05 17:21:44 +0000] [23313] [INFO] Reason: Worker failed to boot.
+[2018-01-05 17:47:23 +0000] [24532] [INFO] Starting gunicorn 19.7.1
+[2018-01-05 17:47:23 +0000] [24532] [INFO] Listening at: http://127.0.0.1:9000 (24532)
+[2018-01-05 17:47:23 +0000] [24532] [INFO] Using worker: sync
+[2018-01-05 17:47:23 +0000] [24537] [INFO] Booting worker with pid: 24537
+Internal Server Error: /p_update/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/edit.py", line 235, in get
+    self.object = self.get_object()
+  File "/home/lizhiping/Website/ShareHouse/views.py", line 258, in get_object
+    self.object = Profile.objects.get(pk=self.request.user.pk)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Profile matching query does not exist.
+Internal Server Error: /author/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "/usr/lib64/python2.7/site-packages/django/template/loader.py", line 53, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: ShareHouse/profile_form.html
+Internal Server Error: /accounts/register/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/usr/lib64/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 87, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+NoReverseMatch: u'photologue' is not a registered namespace
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/usr/lib64/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/usr/lib64/python2.7/site-packages/django/template/defaulttags.py", line 439, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/lib64/python2.7/site-packages/django/urls/base.py", line 87, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+NoReverseMatch: u'photologue' is not a registered namespace
+Not Found: /001.html
+Not Found: /001.html
+Not Found: /gupiao/001.html
+Not Found: /001.html
+Not Found: /001.html
+[2018-01-05 18:46:30 +0000] [26992] [INFO] Starting gunicorn 19.7.1
+[2018-01-05 18:46:30 +0000] [26992] [INFO] Listening at: http://127.0.0.1:9000 (26992)
+[2018-01-05 18:46:30 +0000] [26992] [INFO] Using worker: sync
+[2018-01-05 18:46:30 +0000] [26997] [INFO] Booting worker with pid: 26997
+Not Found: /001.html
+Not Found: /001.html
+Not Found: /gupiao
+Not Found: /gupiao/index
+Not Found: /gupiao/001.html
+[2018-01-05 18:52:55 +0000] [27295] [INFO] Booting worker with pid: 27295
+[2018-01-05 18:52:55 +0000] [24532] [INFO] Handling signal: hup
+[2018-01-05 18:52:55 +0000] [24532] [INFO] Hang up: Master
+[2018-01-05 18:52:55 +0000] [27296] [INFO] Booting worker with pid: 27296
+[2018-01-05 18:52:55 +0000] [27297] [INFO] Booting worker with pid: 27297
+[2018-01-05 18:52:55 +0000] [26992] [INFO] Handling signal: hup
+[2018-01-05 18:52:55 +0000] [26992] [INFO] Hang up: Master
+[2018-01-05 18:52:55 +0000] [27299] [INFO] Booting worker with pid: 27299
+[2018-01-05 10:52:56 +0000] [27296] [INFO] Worker exiting (pid: 27296)
+[2018-01-05 10:52:56 +0000] [27295] [INFO] Worker exiting (pid: 27295)
+Not Found: /robots.txt
+Not Found: /favicon.ico/
+Internal Server Error: /p_update/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/edit.py", line 235, in get
+    self.object = self.get_object()
+  File "/home/lizhiping/Website/ShareHouse/views.py", line 258, in get_object
+    self.object = Profile.objects.get(pk=self.request.user.pk)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Profile matching query does not exist.
+Internal Server Error: /author/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "/usr/lib64/python2.7/site-packages/django/template/loader.py", line 53, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: ShareHouse/profile_form.html
+Not Found: /favicon.ico
+Internal Server Error: /p_update/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/edit.py", line 235, in get
+    self.object = self.get_object()
+  File "/home/lizhiping/Website/ShareHouse/views.py", line 258, in get_object
+    self.object = Profile.objects.get(pk=self.request.user.pk)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Profile matching query does not exist.
+Internal Server Error: /p_update/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/edit.py", line 235, in get
+    self.object = self.get_object()
+  File "/home/lizhiping/Website/ShareHouse/views.py", line 258, in get_object
+    self.object = Profile.objects.get(pk=self.request.user.pk)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Profile matching query does not exist.
+Internal Server Error: /p_update/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/edit.py", line 235, in get
+    self.object = self.get_object()
+  File "/home/lizhiping/Website/ShareHouse/views.py", line 258, in get_object
+    self.object = Profile.objects.get(pk=self.request.user.pk)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Profile matching query does not exist.
+Internal Server Error: /p_update/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/edit.py", line 235, in get
+    self.object = self.get_object()
+  File "/home/lizhiping/Website/ShareHouse/views.py", line 258, in get_object
+    self.object = Profile.objects.get(pk=self.request.user.pk)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Profile matching query does not exist.
+Internal Server Error: /p_update/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/edit.py", line 235, in get
+    self.object = self.get_object()
+  File "/home/lizhiping/Website/ShareHouse/views.py", line 258, in get_object
+    self.object = Profile.objects.get(pk=self.request.user.pk)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Profile matching query does not exist.
+Internal Server Error: /p_update/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/edit.py", line 235, in get
+    self.object = self.get_object()
+  File "/home/lizhiping/Website/ShareHouse/views.py", line 258, in get_object
+    self.object = Profile.objects.get(pk=self.request.user.pk)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Profile matching query does not exist.
+Internal Server Error: /author/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 84, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 66, in resolve_template
+    return select_template(template, using=self.using)
+  File "/usr/lib64/python2.7/site-packages/django/template/loader.py", line 53, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+TemplateDoesNotExist: ShareHouse/profile_form.html
